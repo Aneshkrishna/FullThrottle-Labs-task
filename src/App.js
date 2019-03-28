@@ -9,7 +9,7 @@ import 'tachyons';
 const particlesOptions = {
   "particles": {
       "number": {
-          "value": 100
+          "value": 70
       },
       "size": {
           "value": 3
@@ -73,11 +73,11 @@ class App extends Component {
     const { value,value2 } = this.state
     return (
       <div style={styles.root}>
-        <h1 className='f1'>FullThrottle Labs-Task</h1>
+        <h1 className='f1'>Full Throttle Labs-Task</h1>
         <Particles className='particles'
           params={particlesOptions}
         />
-        <div className='value b f4' style={styles.sliderborder}>$  {value}</div>        
+        <div className='value b f4' style={styles.sliderborder}>Amount in $  {value}</div>        
         <div style={styles.sliderWrapper}>
           <div className='slider'>
             <Slider
